@@ -1,0 +1,20 @@
+{
+  "detectors_to_exclude": "assembly,timestamp,missing-zero-check,too-many-digits,conformance-to-solidity-naming-conventions,low-level-calls,divide-before-multiply,pre-declaration-usage-of-local-variables,reentrancy-vulnerabilities-3",
+  "exclude_informational": false,
+  "exclude_low": false,
+  "exclude_medium": false,
+  "exclude_high": false,
+  "disable_color": false,
+  "filter_paths": "(lib/|mocks/|test/)",
+  "legacy_ast": false,
+  "solc_remaps": [
+      "hardhat-deploy/=lib/hardhat-deploy/",
+      "@openzeppelin/=lib/openzeppelin-contracts/",
+      "ds-test/=lib/solmate/lib/ds-test/src/",
+      "forge-std/=lib/forge-std/src/",
+      "solmate/=lib/solmate/src/",
+      "pigeon/=lib/pigeon/src/",
+      "solady/=lib/pigeon/lib/solady/src/"
+    ]
+
+}
